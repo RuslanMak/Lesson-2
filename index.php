@@ -1,6 +1,6 @@
 <?php
-//     $x = rand(0, 100);
-    $x = 8;
+     $x = rand(0, 100);
+//    $x = 8;
 
     echo $x . "<br>";
 
@@ -10,14 +10,16 @@
 
     do {
         if ($a > $x) {
+            echo "x=" . $x . "<br>";
             echo "задуманное число НЕ входит в числовой ряд" . "<br>";
+            break;
         } else {
             echo " go on" . "<br>";
             if ($a == $x) {
                 echo "cool" . "<br>";
                 echo "a= " . $a . "<br>";
-                echo "b=" . $b . "<br>";
-                echo "задуманное число входит в числовой ряд";
+                echo "x=" . $x . "<br>";
+                echo "задуманное число входит в числовой ряд" . "<br>";
                 break;
             } else {
                 $c = $a;
@@ -28,26 +30,9 @@
                 echo "b = c = " . $b . "<br><br>";
             }
         }
-        echo $a . " & " . $x . "<br>";
+        echo "a=" . $a . " & " . "x=" . $x . "<br>" . "Go on for new start" . "<br>";
     }
-    while ($a <= $x);
-
-
-    //or we can do like here
-
-//    do {
-//        if ($a > $x) {
-//            echo "задуманное число НЕ входит в числовой ряд" . "<br>";
-//        } elseif ($a == $x) {
-//            echo "задуманное число входит в числовой ряд";
-//            break;
-//        } else {
-//            $c = $a;
-//            $a = $a + $b;
-//            $b = $c;
-//        }
-//    }
-//    while ($a <= $x);
+    while ($a >! $x);
 ?>
 
 
