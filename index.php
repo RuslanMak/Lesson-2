@@ -29,7 +29,7 @@
                 echo "b = c = " . $b . "<br><br>";
             }
         }
-        echo "a=" . $a . " & " . "x=" . $x . "<br>" . "Go on for new start" . "<br>";
+        echo "a=" . $a . " & " . "x=" . $x . "<br>" . "Go on for new start" . "<br><br>";
     }
     while ($a >! $x);
 ?>
